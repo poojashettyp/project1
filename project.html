@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murudeshwara Temple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: #c1b1b1;
+            background-color: #f4f4ba;
+        }
+        header {
+            background-color: #444;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header h1 {
+            color: #fffdd0;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 5px 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        h2 {
+            color: white;
+            background-color: #e1b399;
+            padding: 10px;
+            animation: slideInDown 1s ease-in-out;
+        }
+        section {
+            padding: 50px 0;
+        }
+        .container {
+            width: 100%;
+            margin: 5 auto;
+            text-align: center;
+        }
+        p{
+            font-size: 25px;
+            font-style: italic;
+        }
+        img {
+            width: 20%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        iframe {
+            border: solid #333;
+            width: 50%;
+            height: 450px;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .temple-image {
+            width: 35%;
+            margin: 10px;
+            animation: slideInUp 1s ease-in-out;
+        }
+        form {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: slideInLeft 1.5s ease-in-out;
+        }
+        label, input, textarea, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: #e1b399;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2e6b31;
+        }
+        footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInDown {
+            from { transform: translateY(-100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideInLeft {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Murudeshwara Temple</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Murudeshwara Temple</h2>
+            <img src="murudeshwara.jpg" alt="Murudeshwara Temple">
+            <p>Murudeshwar Temple is a Hindu shrine in the coastal town of Murudeshwar in Karnataka, India that's dedicated to Lord Shiva. The temple is known for its 123-foot (37-meter) statue of Shiva, which is the second tallest in the world and can be seen from a distance. The temple also has a 237-foot gopura, which is the second tallest in India..</p>
+            
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Murudeshwara</h2>
+            <p>The temple is built on Kanduka Hill, which is surrounded by the Laccadive Sea on three sides. The temple's history is linked to the story of Ravana receiving the Atma Linga from Shiva, and the site is said to date back to the time of the Ramayana. The temple complex also includes statues of a sun chariot, Arjuna receiving Geetopadesham from Krishna, and Ravana being tricked by Ganesha. </p>
+        </div>
+    </section>
+
+    <section id="history">
+        <div class="container">
+            <h2>Our History</h2>
+            <p>The temple's origins are linked to a popular legend about Ravana, the demon king of Lanka. According to the story, Lord Shiva appeared to Ravana and granted him the Atma Linga, a divine symbol of Shiva that gave him immense power. However, Lord Vishnu was concerned that Ravana would misuse the Atma Linga, so the gods devised a plan to trick him. Ravana handed the Atma Linga to a sage named Kanduka, but Lord Ganesha disguised as a boy tricked the sage into placing the lingam on the ground, where it became embedded. This spot eventually became the site of the Murudeshwar Temple. 
+                The temple we see today was built in the 16th century by Tuluva King, a local chieftain. It has since been renovated and expanded by several rulers, including the Vijayanagara Empire, the Keladi Nayakas, and the Wadiyar dynasty. The temple is also associated with the epic Ramayana, as it is believed to be the spot where Lord Rama performed penance after killing Ravana.</p>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="container">
+            <h2>Our Location</h2>
+            <p>We are located at:</p>
+            <address>
+                Murudeshwara Temple,<br>
+                Murudeshwar,<br>
+                Bhatkal Taluk,<br>
+                Uttara Kannada District,<br>
+                Karnataka - 581 350
+            </address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.696954483332!2d74.4946641!3d14.095058199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc46d38a06f3fb%3A0x2c351e9e89d2dcf4!2sMurudeshwar%20Temple%20Hwy!5e0!3m2!1sen!2sin!4v1724424392146!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+             <img src="image 6.jpeg"Murudeshwara Temple Image 2" class="temple-image"><br>
+            <img src="image 1.jpg" alt="Murudeshwara Temple Image 3" class="temple-image">
+            <img src="image 4.jpg" alt="Murudeshwara Temple Image 4" class="temple-image">
+        </div>
+    </section>
+
+    <section id="feedback">
+        <div class="container">
+            <h2>Feedback</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"  required>
+               
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  required>
+               
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+               
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Murudeshwara Temple. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
